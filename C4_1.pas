@@ -45,7 +45,7 @@ begin
       surname := word(s); // Фамилия
       name := word(s); // Имя
       twos := 0; // Считаем количество его 2-ек
-      for j:=1 to 3 do begin
+      for j := 1 to 3 do begin
         m[j] := StrToInt(word(s)); // Читаем оценки
         // Считаем его 2-ки  
         if m[j] = 2 then
@@ -56,9 +56,9 @@ begin
   // Пробегаем и выводим по убыванию количества 2-ек
   for et := 3 downto 1 do begin // Ожидаемое количество двоек 
     writeln('Количество двоек: ', et);
-    for i := 1 to N do
+    for i := 1 to N do 
       with A[i] do
-        if twos = et then
+        if twos = et then // Если у ученика нужное количество двоек
           writeln(surname,' ', name);
   end;
 end.
