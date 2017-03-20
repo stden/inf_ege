@@ -43,11 +43,11 @@ int main() {
       m3 = x;
   }
   int R = 33000;
-  answer = max(m33 * second, m11 * m3);
+  int answer = max(m33 * second, m11 * m3);
   // answer == 0 - Не нашли чисел
   if(R == answer)
-    printf("Контроль пройден\n");
+    cout << "Контроль пройден" << endl;
   else
-    printf("Контроль не пройден\n");
+    cout << "Контроль не пройден" << endl;
   return 0;
 }
